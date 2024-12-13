@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_filters %}
+{% block title %}
+<title>Contact </title>
+
+{% endblock title %}
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+ <!-- Contact Section -->
+ <section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>We’re Here to Help You Succeed</p>
+      <p>Got questions or need support? Reach out to us, and we’ll connect you with the solutions you need—quickly and effortlessly.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt"></i>
+            <h3>Address</h3>
+            <p>0100 KICC, Nairobi, NR, Kenya </p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone"></i>
+            <h3>Call Us</h3>
+            <p>+1254 7123 45678</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope"></i>
+            <h3>Email Us</h3>
+            <p>info@supportpulse.com</p>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+
+      <div class="row gy-4 mt-1">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808778620874!2d36.82017157590945!3d-1.2889389986988184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d844cb44d5%3A0x8400193d944f808f!2sKICC%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1733507522174!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+        <!-- contact form -->
+
+        <!-- contact.html -->
+<!-- contact.html -->
+<div class="col-lg-6">
+  <form method="post" id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+      {% csrf_token %}
+      <div class="row gy-4">
+          <div class="col-md-6">
+              {{ form.name }}
+          </div>
+          <div class="col-md-6">
+              {{ form.email }}
+          </div>
+          <div class="col-md-12">
+              {{ form.subject }}
+          </div>
+          <div class="col-md-12">
+              {{ form.message }}
+          </div>
+          <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <div id="form-loading" style="display:none;">Loading...</div>
+              <div id="form-success" style="display:none;">Your message has been sent. Thank you!</div>
+              <div id="form-error" style="display:none;">Something went wrong. Please try again.</div>
+          </div>
+      </div>
+  </form>
+</div>
+
+
+      
+      <!-- End Contact Form -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Contact Section -->
+  {% include 'footer.html' %} 
+
+{% endblock content %}
+
+  
+  
+  

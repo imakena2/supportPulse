@@ -1,0 +1,35 @@
+{% load static %}
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <a href="{% url 'index' %}#hero" class="logo d-flex align-items-center me-auto">
+      <img src="{% static 'assets/img/logo.png' %}" alt="">
+      <h1 class="sitename">SupportPulse</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="{% url 'index' %}" class="active">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'features' %}">Features</a></li>
+        <li><a href="{% url 'details' %}">Services</a></li>
+        <li><a href="{% url 'pricing' %}">Pricing</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li ><a href="{% url 'monitoring' %}">Monitoring</a></li>
+        
+
+        {% if user.is_authenticated %}
+        <!-- Display logout form when user is logged in -->
+        <form action="{% url 'logout' %}" method="POST" style="display: inline;">
+          {% csrf_token %}
+          <button type="submit" class="logout-link btn-getstarted">Logout</button>
+        </form>
+        {% else %}
+        <!-- Display login link when user is not logged in -->
+        <li><a class="logout-link btn-getstarted" href="{% url 'login' %}">User Login</a></li>
+        {% endif %}
+        
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+  </div>
+</header>

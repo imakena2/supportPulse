@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+
+<footer id="footer" class="footer position-relative light-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="{% url 'index' %}#hero" class="logo d-flex align-items-center">
+          <span class="sitename">SupportPulse</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Kenyatta Avenue</p>
+          <p>Nairobi, NR 01000</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+254 7123 45678</span></p>
+          <p><strong>Email:</strong> <span>info@supportpulse.com</span></p>
+        </div>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="{% url 'index' %}#hero">Home</a></li>
+          <li><a href="{% url 'about' %}#about">About us</a></li>
+          <li><a href="{% url 'services' %}#services">Services</a></li>
+          <li><a href="{% url 'pricing' %}#pricing">Pricing</a></li>
+          <li><a href="{% url 'contact' %}#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Small Business</a></li>
+          <li><a href="#">Web Help Desk</a></li>
+          <li><a href="#">Automated Help Desk</a></li>
+          <li><a href="#">Cloud Help Desk</a></li>
+          <li><a href="#">IT Help Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12 footer-newsletter">
+        <h4>Our Newsletter</h4>
+        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+        <form action="forms/newsletter.php" method="post" class="php-email-form">
+          <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">SupportPulse<P/strong><span>All Rights Reserved</span></p>
+    <div class="credits">
+      Designed by <a href="#">@254Kenya</a>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+{% endblock content %}
+
+

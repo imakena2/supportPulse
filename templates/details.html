@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Contact </title>
+
+{% endblock title %}
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-box">
+              <h4>Serices List</h4>
+              <div class="services-list">
+                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>24/7 Customer Support Solutions</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Third-Party Integrations</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Automated Ticket Management</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Multi-Channel Support Integration</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Analytics and Performance Tracking</span></a>
+              </div>
+            </div><!-- End Services List -->
+
+            <div class="service-box">
+              <h4>Download Catalog</h4>
+              <div class="download-catalog">
+                <a href="#"><i class="bi bi-filetype-pdf"></i><span>Catalog PDF</span></a>
+                <a href="#"><i class="bi bi-file-earmark-word"></i><span>Catalog DOC</span></a>
+              </div>
+            </div><!-- End Services List -->
+
+            <div class="help-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-headset help-icon"></i>
+              <h4>Have a Question?</h4>
+              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+254 7123 45678</span></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">info@supportpulse.com</a></p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'assets/img/services.jpg' %}" alt="" class="img-fluid services-img">
+            <h3>Simplify your support tasks and focus on delivering on-the-spot solutions. Nurture customer satisfaction with every conversation.</h3>
+            <p>
+              Elevate supportdesk, customer experience and ticket resolution just like other users with auto-scheduled workflows. Effortlessly route cases to the right team and send pre-designed messages, trimming down response times. See a steady uptick in the number of resolved cases day after day.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Aim for super quick responses to make your recipients feel valued and well-supported.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Stay in touch with your customers or business partners around the clock with time-based automations.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Use customers' willingness to share feedback to measure satisfaction and sharpen support quality.</span></li>
+            </ul>
+            <p>
+              Go for integrated multichannel assistance and respond to emails, chats, website forms, or messages from other touchpoints within the same app. Simplify customer communication and always provide preferred contact methods.
+            </p>
+            <p>
+              Use easy-to-learn features to manage your tickets on the fly. Make the messaging process convenient, ensuring even the newest team members can jump in without missing a beat.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+
+    {% include 'footer.html' %} 
+
+    {% endblock content %}
+    

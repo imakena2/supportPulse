@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %} <title>Create Ticket</title> {% endblock %}
+
+{% block content %}
+    {% include 'navbar.html' %}
+    <div class="container container-fluid">
+        <img src="{% static 'assets/img/background1.webp' %}" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Display messages -->
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }} mt-3">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+
+                <!-- Welcome message with logged-in user's name -->
+                {% if user.is_authenticated %}
+                    <div class="text-center mb-4">
+                        <h3>Welcome, {{ user.username }}! How are we helping you today?</h3>
+                    </div>
+                {% endif %}
+
+                <!-- Form -->
+                <form method="post">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="text-center">Let Us know Your Issue</legend>
+                        {{ form|crispy }}
+                    </fieldset>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary">Submit Ticket</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

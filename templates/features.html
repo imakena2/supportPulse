@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Features </title>
+
+{% endblock title %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+  <!-- Features Section -->
+  <section id="features" class="features section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Features</h2>
+      <p>Explore Our Cutting-Edge Features: Designed for Excellence</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-5 d-flex align-items-center">
+
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                <i class="bi bi-binoculars"></i>
+                <div>
+                  <h4 class="d-none d-lg-block">Ease your customer service with workflow management</h4>
+                  <p>
+                    Time is money, so why spend it on manual tasks? Set up condition- and action-based SupportDesk workflows to manage daily communications and optimize your resources.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                <i class="bi bi-box-seam"></i>
+                <div>
+                  <h4 class="d-none d-lg-block">Track the time saved</h4>
+                  <p>
+                    Look at the counters that show the tasks done for you. See how much time you save. Automate solving any complex customer cases while maintaining overall control.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                <i class="bi bi-brightness-high"></i>
+                <div>
+                  <h4 class="d-none d-lg-block">Define actions</h4>
+                  <p>
+                    Think of actions that are repetitive or involve manual work. Then, select the relevant actions from the drop-down list. They'll be performed automatically when all conditions are met.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul><!-- End Tab Nav -->
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <img src="{% static 'assets/img/tabs-1.jpg' %}" alt="" class="img-fluid">
+            </div><!-- End Tab Content Item -->
+
+            <div class="tab-pane fade" id="features-tab-2">
+              <img src="{% static 'assets/img/tabs-2.jpg' %}" alt="" class="img-fluid">
+            </div><!-- End Tab Content Item -->
+
+            <div class="tab-pane fade" id="features-tab-3">
+              <img src="{% static 'assets/img/tabs-3.jpg' %}" alt="" class="img-fluid">
+            </div><!-- End Tab Content Item -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Features Section -->
+
+  <!-- Features Details Section -->
+  <section id="features-details" class="features-details section">
+
+    <div class="container">
+
+      <div class="row gy-4 justify-content-between features-item">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <img src="{% static 'assets/img/features-1.jpg' %}" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="content">
+            <h3>Lay a solid foundation! Embrace macros before moving to workflows</h3>
+            <p>
+              Embrace a streamlined workday with a single click. Use macros to effortlessly run pre-set and fully controlled actions on tickets. Tailor-made for individual or team use, macros boost your efficiency, making daily tasks more manageable.
+            </p>
+            <a href="#" class="btn more-btn">Learn More</a>
+          </div>
+        </div>
+
+      </div><!-- Features Item -->
+
+      <div class="row gy-4 justify-content-between features-item">
+
+        <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="content">
+            <h3>Get tickets into the right hands in seconds</h3>
+            <p>
+              Smartly assign tickets to agents based on their skills, department, or specific area of interest. Use automated ticket assignments to balance your workload and bring a sense of ownership. Greatly reduce customer wait times for qualified agent support.
+            </p>
+            <ul>
+              <li><i class="bi bi-easel flex-shrink-0"></i> Skill-Based Ticket Assignment.</li>
+              <li><i class="bi bi-patch-check flex-shrink-0"></i> Departmental Categorization.</li>
+              <li><i class="bi bi-brightness-high flex-shrink-0"></i> Load Balancing for Agents.</li>
+            </ul>
+            <p></p>
+            <a href="#" class="btn more-btn">Learn More</a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+          <img src="{% static 'assets/img/features-2.jpg' %}" class="img-fluid" alt="">
+        </div>
+
+      </div><!-- Features Item -->
+
+    </div>
+
+  </section><!-- /Features Details Section -->
+
+  {% include 'footer.html' %} 
+
+
+
+
+
+
+
+{% endblock content %}

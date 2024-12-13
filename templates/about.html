@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>About </title>
+
+{% endblock title %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+<section id="about" class="about section">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p class="who-we-are">Who We Are</p>
+        <h3>Empowering Growth, One Innovation at a Time</h3>
+        <p class="fst-italic">
+          Browse features that promote powerful team synergy, streamline customer care experience, and push productivity to the max.
+        </p>
+        <ul>
+          <li><i class="bi bi-check-circle"></i> <span>Use robust messaging update features to stay in touch with your customers. Always give them the top-notch support they need and deserve.</span></li>
+          <li><i class="bi bi-check-circle"></i> <span>Create dedicated teams for a specific language, location, or skill set. Solve customer cases together and stay on top of things, no matter the time or distance.
+          </span></li>
+          <li><i class="bi bi-check-circle"></i> <span>Cut out repetitive, manual customer service tasks. Get a real boost with intuitive, easy-to-configure automation features.</span></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/about-company-1.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <div class="col-lg-12">
+                <img src="{% static 'assets/img/about-company-2.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-12">
+                <img src="{% static 'assets/img/about-company-3.jpg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clients Section -->
+<section id="clients" class="clients section">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <img src="{% static 'assets/img/clients/safaricom.png' %}" class="img-fluid" alt="">
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <img src="{% static 'assets/img/clients/aitelkenya.png' %}" class="img-fluid" alt="">
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <img src="{% static 'assets/img/clients/KQ.png' %}" class="img-fluid" alt="">
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <img src="{% static 'assets/img/clients/KCB.png' %}" class="img-fluid" alt="">
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <img src="{% static 'assets/img/clients/NSE.jpeg' %}" class="img-fluid" alt="">
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <img src="{% static 'assets/img/clients/KAA.png' %}" class="img-fluid" alt="">
+      </div><!-- End Client Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Clients Section -->
+{% include 'footer.html' %} 
+
+
+{% endblock content %}
+
+
+
+
+
+

@@ -1,0 +1,361 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Home</title>
+{% endblock title %}
+
+{% block content %}
+<body class="index-page">
+
+<!-- header Section-->
+{% include 'navbar.html' %}
+
+<!-- index page -->
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="{% static 'assets/img/hero-bg-light.webp' %}" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up">Welcome to <span>SupportPulse</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100">Empowering Businesses with Reliable Support Solutions<br></p>
+          <p data-aos="fade-up" data-aos-delay="100">Your trusted partner in delivering exceptional support services tailored to your company's unique needs.<br></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="{% url 'about' %}#about" class="btn-get-started">Get Started</a>
+            
+          </div>
+          <img src="{% static 'assets/img/hero-services-img.webp' %}" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Comprehensive Support Services</a></h4>
+                <p class="description">We offer customized support solutions to address your company's operational challenges and enhance productivity.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Expert Consultation</a></h4>
+                <p class="description">Our team of experienced professionals is here to provide strategic advice and practical solutions for your business.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">24/7 Assistance</a></h4>
+                <p class="description">With round-the-clock availability, we ensure your operations run smoothly without interruptions.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- end of index page -->
+<!-- about -->
+
+
+<!-- features -->
+
+
+    
+  
+
+
+    <!-- More Features Section -->
+    <section id="more-features" class="more-features section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h3>Our Specialized Services to Elevate Your Business</h3>
+            <p>We offer a range of tailored solutions to meet your company's unique needs, designed to simplify operations and drive success.</p>
+
+            <div class="row">
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-easel flex-shrink-0"></i>
+                <div>
+                  <h4>Tailored Business Solutions</h4>
+                  <p>Customized strategies to address your specific challenges and achieve your goals seamlessly.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>Expert Guidance</h4>
+                  <p>Gain access to our experienced professionals who provide actionable insights and practical advice.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>Advanced Tools & Technology</h4>
+                  <p>Empower your team with cutting-edge tools designed to enhance efficiency and productivity.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>24/7 Dedicated Support</h4>
+                  <p>Round-the-clock assistance to ensure uninterrupted operations and immediate issue resolution.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+
+          </div>
+
+          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'assets/img/background1.webp' %}" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /More Features Section -->
+    <!-- services -->
+    
+
+  
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>What is SupportPulse, and how does it work? </h3>
+                <div class="faq-content">
+                  <p>SupportPulse is an IT support platform that connects customers to the right IT departments within a company. When a customer reports an issue, SupportPulse ensures it is routed to the appropriate department for resolution</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Who can use SupportPulse?</h3>
+                <div class="faq-content">
+                  <p>Any customer experiencing issues with services provided by a company partnered with SupportPulse can use the platform to report and track their issues.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Does SupportPulse provide 24/7 support</h3>
+                <div class="faq-content">
+                  <p> Yes, SupportPulse offers 24/7/365 support. Feel free to reach out to our helpful support heroes at any time for guidance. </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Can I track the progress of my issue?</h3>
+                <div class="faq-content">
+                  <p>Yes! SupportPulse provides real-time updates about the status of your request, ensuring transparency and timely notifications.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What types of issues can I report?</h3>
+                <div class="faq-content">
+                  <p>You can report any issue related to IT services or products provided by your company, including login issues, software glitches, network problems, and more.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How long does it take to resolve an issue? </h3>
+                <div class="faq-content">
+                  <p>The resolution time depends on the complexity of the issue and the company’s IT department’s response time. SupportPulse ensures that your request is routed and prioritized as quickly as possible.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What Our Partners Say About Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Working with SupportPulse has been a game-changer for our operations. Their innovative solutions and commitment to excellence have enhanced our ability to deliver value to our customers. The professionalism and dedication of their team are truly commendable.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/peter.jpeg' %}" class="testimonial-img" alt="">
+                  <h3>Peter Ndegwa</h3>
+                  <h4>Ceo Safaricom PLC</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  We partnered with SupportPulse to improve our customer experience and were impressed by their ability to tailor solutions to our unique needs. Their seamless execution and ongoing support have helped us achieve significant milestones.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/joan-mburu.jpeg' %}" class="testimonial-img" alt="">
+                  <h3>Joan Mburu</h3>
+                  <h4>Airtel Kenya Representative</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Collaboration with SupportPulse has been exceptional. They provided innovative solutions that improved efficiency across our operations. We are proud to work with a team that understands our goals and consistently delivers results.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/kcbreps.jpeg' %}" class="testimonial-img" alt="">
+                  <h3>Maurice Opiyo</h3>
+                  <h4>Managing Director of KCB</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  We engaged SupportPulse to streamline our internal processes, and the results have exceeded expectations. Their expertise and attention to detail have been instrumental in helping us achieve our objectives.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/allan-kilavuka.webp' %}" class="testimonial-img" alt="">
+                  <h3>Allan Kilavuka</h3>
+                  <h4>Kenya Airways Team</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Our partnership with SupportPulse has been critical in modernizing key aspects of our business. Their professionalism, innovative thinking, and unwavering support have made a significant difference in our operations.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/Risper-Alaro.webp' %}" class="testimonial-img" alt="">
+                  <h3>Risper Alaro</h3>
+                  <h4>Executive Director Stocks LTD</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+   
+  </main>
+  {% include 'footer.html' %} 
+
+  
+</body>
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Features </title>
+
+{% endblock title %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+<h2>Welcome, {{ user.username }}</h2>
+<a href="{% url 'create_ticket' %}">Create a New Ticket</a>
+<h3>Your Tickets</h3>
+<ul>
+    {% for ticket in user.ticket_set.all %}
+    <li>
+        {{ ticket.subject }} - {{ ticket.status }}
+    </li>
+    {% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+
+{% endblock content %}
