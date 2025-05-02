@@ -39,10 +39,10 @@ class ContactForm(forms.Form):
 class TicketForm(forms.ModelForm):
     class Meta:
         model = Ticket
-        fields = ['phone', 'subject', 'description', 'issue']
+        fields = ['phone', 'subject', 'description', 'error']
         widgets = {
             'description': forms.Textarea(attrs={'class': 'form-control', 'rows': 3}),
-            'issue': forms.Textarea(attrs={'class': 'form-control', 'rows': 5}),
+            'error': forms.Textarea(attrs={'class': 'form-control', 'rows': 5}),
             'phone': forms.TextInput(attrs={'class': 'form-control'}),
             'subject': forms.TextInput(attrs={'class': 'form-control'}),
         }

@@ -32,7 +32,7 @@ class Ticket(models.Model):
     phone = models.CharField(max_length=15, blank=True, null=True)
     subject = models.CharField(max_length=255)
     description = models.TextField()
-    issue = models.TextField(blank=True, null=True)
+    error = models.TextField(blank=True, null=True)
     response = models.TextField(blank=True, null=True)
     status = models.CharField(
         max_length=20, 
